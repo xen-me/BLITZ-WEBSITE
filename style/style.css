@@ -22,7 +22,8 @@ header img {
   max-width: 100px;
   height: auto;
   position: relative;
-  top: -20px; /* move image up */
+  top: -20px;
+  /* move image up */
 }
 
 /* Container inside header */
@@ -66,15 +67,19 @@ header img {
   color: #e0e0e0;
   cursor: pointer;
 }
+
 .hamburger {
-  position: absolute; /* or fixed, depending on design */
-    top: -1rem;
+  position: absolute;
+  /* or fixed, depending on design */
+  top: -1rem;
   right: 1rem;
-  z-index: 1000; /* above other elements */
+  z-index: 1000;
+  /* above other elements */
 }
 
 nav {
-  position: relative; /* ensure positioning context */
+  position: relative;
+  /* ensure positioning context */
 }
 
 /* Small screens styling */
@@ -82,22 +87,27 @@ nav {
   .Nav-Links {
     flex-direction: column;
     gap: 1.5em;
-    display: none; /* hidden by default */
+    display: none;
+    /* hidden by default */
   }
 
   .Nav-Links.active {
-    display: flex; /* show when active */
+    display: flex;
+    /* show when active */
   }
+
   .Nav-Links.active {
-  max-height: 500px; /* or a value enough to show all links */
-}
+    max-height: 500px;
+    /* or a value enough to show all links */
+  }
 
   .hamburger {
     display: block;
   }
 
   .Nav-Links a {
-    display: block; /* always show links inside toggled menu */
+    display: block;
+    /* always show links inside toggled menu */
   }
 }
 
@@ -105,13 +115,16 @@ nav {
   display: flex;
   flex-direction: row;
   gap: 1.5em;
-  background-color: #25D366;      /* WhatsApp-like bright green */
-  color: #000;                    /* black text for contrast */
+  background-color: #25D366;
+  /* WhatsApp-like bright green */
+  color: #000;
+  /* black text for contrast */
   padding: 0.5rem 0.5rem;
   border-radius: 8px;
   position: absolute;
   left: -21rem;
-  top: 2rem;                     /* below the hamburger */
+  top: 2rem;
+  /* below the hamburger */
   box-shadow: 0 8px 20px rgba(37, 211, 102, 0.4);
   font-weight: 600;
   font-size: 1rem;
@@ -146,8 +159,10 @@ nav {
   min-height: 600px;
   overflow: hidden;
   display: flex;
-  align-items: flex-start; /* Align to top */
-  justify-content: flex-start; /* Align to left */
+  align-items: flex-start;
+  /* Align to top */
+  justify-content: flex-start;
+  /* Align to left */
   text-align: left;
   color: white;
 }
@@ -160,8 +175,10 @@ nav {
   height: auto;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.7; /* Increased opacity for better visibility */
-  mix-blend-mode: screen; /* Creates interesting blend with background */
+  opacity: 0.7;
+  /* Increased opacity for better visibility */
+  mix-blend-mode: screen;
+  /* Creates interesting blend with background */
 }
 
 .hero-content {
@@ -178,7 +195,8 @@ nav {
   flex-direction: column;
   align-content: flex-start;
   color: #fff;
-  box-sizing: border-box; /* Added for better sizing control */
+  box-sizing: border-box;
+  /* Added for better sizing control */
 }
 
 .hero-content h1 {
@@ -197,7 +215,7 @@ nav {
 .hero-content p {
   margin-bottom: 1.5rem;
   line-height: 1.6;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 /* Benefits grid inside hero */
@@ -213,7 +231,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: rgba(255,255,255,0.9);
+  color: rgba(255, 255, 255, 0.9);
   line-height: 1.5;
 }
 
@@ -228,7 +246,7 @@ nav {
 
 .global-presence {
   font-size: 0.95rem;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255, 255, 255, 0.85);
   margin: 2rem 0;
   position: relative;
   padding-left: 2rem;
@@ -284,7 +302,7 @@ nav {
     align-items: center;
     flex-direction: column;
     position: relative;
-    
+
   }
 
 
@@ -305,6 +323,7 @@ nav {
     font-size: 1rem;
     text-align: center;
   }
+
   .hero-content p {
     font-size: 0.95rem;
     text-align: justify;
@@ -336,6 +355,7 @@ nav {
     text-align: center;
     padding-left: 0;
   }
+
   .global-presence:before {
     display: none;
   }
@@ -345,7 +365,7 @@ nav {
     padding: 1.25rem;
     border-radius: 8px;
     margin-top: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     display: block;
   }
@@ -370,7 +390,7 @@ nav {
     align-items: center;
     flex-direction: column;
     position: relative;
-    
+
   }
 
 
@@ -391,6 +411,7 @@ nav {
     font-size: 1rem;
     text-align: center;
   }
+
   .hero-content p {
     font-size: 0.95rem;
     text-align: justify;
@@ -422,6 +443,7 @@ nav {
     text-align: center;
     padding-left: 0;
   }
+
   .global-presence:before {
     display: none;
   }
@@ -431,7 +453,7 @@ nav {
     padding: 1.25rem;
     border-radius: 8px;
     margin-top: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: 100%;
     display: block;
   }
@@ -517,10 +539,57 @@ nav {
 
 /* Add footer styles here if needed */
 
-  footer {
-      background: #000;
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
+footer {
+  background: #000;
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    /* يجعل الفيديو في الأعلى والنص تحته */
+    height: auto;
+    min-height: auto;
+    align-items: stretch;
+    justify-content: flex-start;
+    padding: 0;
+    position: relative;
+  }
+
+  .hero video {
+    position: static;
+    /* يجعله داخل التدفق الطبيعي */
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-height: 360px;
+    z-index: 1;
+    opacity: 1;
+    mix-blend-mode: normal;
+  }
+
+  .hero-content {
+    position: static;
+    /* إزالة التراكب فوق الفيديو */
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.7);
+    /* خلفية خفيفة */
+    backdrop-filter: blur(3px);
+    padding: 1.5rem 1rem;
+    border-radius: 12px;
+    z-index: 2;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-content h2 {
+    font-size: 1.2rem;
+  }
+}
