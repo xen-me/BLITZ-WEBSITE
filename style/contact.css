@@ -301,6 +301,7 @@ footer {
     box-shadow: none;
     width: auto;
     padding: 0;
+    gap: 1rem;
   }
 
 
