@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <!-- Basic Metadata -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BLITZ FILM - Paint Protection Film</title>
+  <meta name="description"
+    content="BLITZ FILM - Premium Paint Protection Film (PPF) with German engineering. Professional automotive protection with 10-year warranty.">
+  <title>BLITZ FILM - Premium Paint Protection Film</title>
+
+  <!-- Preload critical resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap"
+    as="style">
 
   <!-- Font and Style -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style/style.css" />
 
-  <!-- Security Headers -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://via.placeholder.com; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com;">
-  <meta http-equiv="X-Frame-Options" content="DENY" />
-  <meta name="referrer" content="no-referrer" />
-  <meta http-equiv="Strict-Transport-Security" content="max-age=63072000; includeSubDomains; preload" />
+  <!-- Link to external CSS file -->
+  <link rel="stylesheet" href="style/style.css" />
 </head>
 
 <body>
-
-  <!-- Header Section: Logo and Navigation -->
+  <!-- Header Section -->
   <header>
     <div class="header-container">
-      <img src="images/blitzfilm12.png" alt="BLITZ FILM logo" />
-      <nav id="mainNav" aria-label="Main navigation">
-        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
-          &#9776;
+      <img src="images/blitzfilm12.png" alt="BLITZ FILM logo" class="logo" />
+      <nav role="navigation" aria-label="Main navigation">
+        <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-links"
+          onclick="toggleMenu()">
+          ☰
         </button>
-        <div class="Nav-Links" id="navLinks">
-          <a href="#">Home</a>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html">Home</a>
           <a href="contact.html">Contact</a>
           <a href="about.html">About</a>
         </div>
@@ -37,95 +41,102 @@
     </div>
   </header>
 
-  <!-- Hero Section: Background Video and Introduction -->
-  <section class="hero">
-    <video autoplay muted loop playsinline>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline poster="images/video-poster.jpg"
+      aria-label="Background video showing car protection">
       <source src="images/racecar.mp4" type="video/mp4" />
-      Your browser does not support the video tag.
+      <p>Your browser does not support the video tag.</p>
     </video>
+
     <div class="hero-content">
-      <div class="hero-text-container">
-        <h1>BLITZ PPF</h1>
-        <h2>Ultimate Paint Protection</h2>
+      <h1>BLITZ PPF</h1>
+      <h2>Ultimate Paint Protection</h2>
 
-        <!-- Introductory Text -->
-        <p class="intro-text">At Blitz, we provide high-quality Paint Protection Film (PPF) designed to keep your car looking flawless. Our premium German-engineered films offer superior durability, scratch resistance, and self-healing properties—ensuring your vehicle stays pristine for years.</p>
-        <p class="secondary-text">Whether you want to protect your new car or restore your current vehicle's finish, Blitz delivers professional-grade solutions tailored for you.</p>
+      <p class="intro-text">
+        At Blitz, we provide high-quality Paint Protection Film (PPF) designed to keep your car looking flawless. Our
+        premium German-engineered films offer superior durability, scratch resistance, and self-healing
+        properties—ensuring your vehicle stays pristine for years.
+      </p>
 
-        <!-- Divider Text -->
-        <div class="section-divider">
-          <span>Why Choose Blitz?</span>
-        </div>
+      <p class="secondary-text">
+        Whether you want to protect your new car or restore your current vehicle's finish, Blitz delivers
+        professional-grade solutions tailored for you.
+      </p>
 
-        <!-- Benefits Grid -->
-        <div class="benefits-grid">
-          <!-- Repeating SVG icons and benefit descriptions -->
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>German precision and quality</span>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>Advanced scratch and stain resistance</span>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>Easy installation and long-lasting protection</span>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>10-year product warranty</span>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>With Nano Ceramic technology</span>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>Guaranteed no yellowing over time</span>
-          </div>
-          <div class="benefit-item">
-            <svg class="benefit-icon" viewBox="0 0 24 24">
-              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-            <span>Enhanced gloss and clarity</span>
-          </div>
-        </div>
-
-        <!-- Final Text and Call to Action -->
-        <p class="global-presence">We are proud to have multiple official agents worldwide, providing excellent service and support wherever you are.</p>
-        <p class="closing-statement">Protect your investment with Blitz — because your car deserves the best.</p>
-        <a href="contact.html" class="cta-button">Get Your Protection Quote</a>
+      <div class="section-divider">
+        <span>Why Choose Blitz?</span>
       </div>
+
+      <div class="benefits-grid">
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>German precision and quality</span>
+        </div>
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>Advanced scratch and stain resistance</span>
+        </div>
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>Easy installation and long-lasting protection</span>
+        </div>
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>10-year product warranty</span>
+        </div>
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>Advanced Nano Ceramic technology</span>
+        </div>
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>Guaranteed no yellowing over time</span>
+        </div>
+        <div class="benefit-item">
+          <svg class="benefit-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z" />
+          </svg>
+          <span>Enhanced gloss and clarity</span>
+        </div>
+      </div>
+
+      <div class="global-presence">
+        We are proud to have multiple official agents worldwide, providing excellent service and support wherever you
+        are.
+      </div>
+
+      <p class="closing-statement">
+        Protect your investment with Blitz — because your car deserves the best.
+      </p>
+
+      <a href="contact.html" class="cta-button">Get Your Protection Quote</a>
     </div>
   </section>
 
-  <!-- Informational Section: What is PPF -->
-  <section class="section bg-dark">
+  <!-- Information Sections -->
+  <section class="section">
     <div class="container">
       <h2>What is PPF?</h2>
       <p>
         Paint Protection Film (PPF) is a transparent layer that guards your vehicle's paint against scratches, chips,
         and environmental damage. BLITZ FILM offers top-tier protection with unmatched gloss and clarity.
       </p>
-    </div>
 
-    <hr class="divider" />
+      <hr class="divider" />
 
-    <!-- Reasons to Choose Blitz -->
-    <div class="container">
       <h2>Why Choose BLITZ?</h2>
       <p>
         We deliver high-quality PPF engineered for lasting performance and flawless finish. Ideal for sports cars,
@@ -134,38 +145,61 @@
     </div>
   </section>
 
-  <!-- Highlighted Benefits Section -->
+  <!-- Benefits Section -->
   <section class="section">
     <div class="container">
       <h2>Benefits of BLITZ FILM</h2>
       <div class="row">
-        <div class="benefit">Scratch & Stone Chip Resistance</div>
-        <div class="benefit">UV & Weather Protection</div>
-        <div class="benefit">High Gloss Finish</div>
-        <div class="benefit">Self-Healing Technology</div>
+        <div class="benefit">
+          <h3>Scratch & Stone Chip Resistance</h3>
+          <p>Advanced multi-layer protection against road debris and everyday wear.</p>
+        </div>
+        <div class="benefit">
+          <h3>UV & Weather Protection</h3>
+          <p>Shield your paint from harmful UV rays and harsh weather conditions.</p>
+        </div>
+        <div class="benefit">
+          <h3>High Gloss Finish</h3>
+          <p>Maintains and enhances your vehicle's original paint brilliance.</p>
+        </div>
+        <div class="benefit">
+          <h3>Self-Healing Technology</h3>
+          <p>Minor scratches disappear with heat, keeping your car looking new.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Footer Section: Contact and Legal -->
+  <!-- Footer -->
   <footer>
     <div class="top-contact-bar">
       <div class="container">
-        📞 +49 177 3654224 | ✉️ blitzcompanyde@gmail.com
-        <span class="lang-links">
-          <a href="https://wa.me/491773654224" target="_blank">💬 WhatsApp</a> |
-          <a href="#">AR</a> | <a href="#">GRE</a>
-        </span>
+        <div class="contact-info">
+          📞 +49 177 3654224 | ✉️ blitzcompanyde@gmail.com
+        </div>
+        <div class="lang-links">
+          <a href="https://wa.me/491773654224" target="_blank" rel="noopener">💬 WhatsApp</a>
+          <a href="#" hreflang="ar">AR</a>
+          <a href="#" hreflang="el">GRE</a>
+        </div>
       </div>
     </div>
-    <p>&copy; 2025 BLITZ FILM. All Rights Reserved.</p>
-    <p>Contact us on WhatsApp for inquiries and pricing.</p>
+    <div class="footer-content">
+      <div class="container">
+        <p>&copy; 2025 BLITZ FILM. All Rights Reserved.</p>
+        <p>Contact us on WhatsApp for inquiries and pricing.</p>
+      </div>
+    </div>
   </footer>
 
   <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/491773654224" class="whatsapp" target="_blank">Chat on WhatsApp</a>
+  <a href="https://wa.me/491773654224" class="whatsapp" target="_blank" rel="noopener"
+    aria-label="Chat with us on WhatsApp">
+    Chat on WhatsApp
+  </a>
 
-  <!-- Script File -->
   <script src="scripts/script.js"></script>
+
 </body>
+
 </html>
