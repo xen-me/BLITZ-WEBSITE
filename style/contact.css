@@ -290,7 +290,7 @@ footer {
 /* Desktop Styles */
 @media (min-width: 1024px) {
   .hamburger {
-    display: block;
+    display: none;
   }
 
   .nav-links {
