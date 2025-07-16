@@ -668,10 +668,7 @@ body.loaded .hero-content {
   transition: opacity 1s ease-in-out;
 }
 
-/* Error handling styles */
-.hero-video:not([src]) {
-  display: none;
-}
+
 
 /* Improved focus management */
 .nav-links.active a:first-child {
@@ -726,17 +723,7 @@ body.loaded .hero-content {
   }
 }
 
-.hero-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -2;
-  opacity: 1;
-  display: block;
-}
+
 
 /* Video fallback styles */
 .hero-video-fallback {
